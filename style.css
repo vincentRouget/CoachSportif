@@ -60,6 +60,7 @@ nav {
 
 /* BURGER MENU */
 
+
 .menu-btn {
     position: relative;
     display: flex;
@@ -116,9 +117,11 @@ nav {
     transform: rotate(-45deg) translate(35px, 35px);
 }
 
+
 /* THIS PART CONCERN WHAT HAPPEN WHEN WE CLICK ON BUTTON, FOR SCREENS UNDER 768px */
 
 @media (max-width: 768px) {
+
 
     .nav-menu {
         flex-direction: column;
