@@ -43,7 +43,7 @@ body {
 #sport .top h3 {
     color: #1A535C;
     padding-inline-end: 40px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Lemon', cursive;
     font-style: normal;
     text-shadow: 0px 5px 5px rgba(255, 107, 107, 0.25);
 }
@@ -74,7 +74,7 @@ body {
 }
 
 .down .noscoachs {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Lemon', cursive;
     background-color: transparent;
     grid-area: 1 / 4 / 3 / 6;
     text-align: center;
@@ -86,8 +86,8 @@ body {
 
 section article div {
 
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background-color: #FF6B6B;
     border-radius: 20%;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
