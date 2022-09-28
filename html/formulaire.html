@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/formulaire.css" rel="stylesheet">
+    <title>GymStudio - Formulaire</title>
+</head>
+<header></header>
+
+<body id="pageFormulaire">
+    <div id="map">
+        <h2 id="where">Où sommes-nous...</h2>
+        <div id="borderMap">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10840.616707391893!2d-1.5495834346557615!3d47.21356550000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1664351445854!5m2!1sfr!2sfr"
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                id="googleMap"></iframe>
+        </div>
+    </div>
+    <form>
+        <div id="container">
+            <div>
+                <label for="name">Nom</label>
+                <br>
+                <input type="text" id="name" name="user_name" class="formulaire">
+            </div>
+            <div>
+                <label for="firstname">Prénom</label>
+                <br>
+                <input type="text" id="firstname" name="user_firstname" class="formulaire">
+            </div>
+            <div>
+                <label for="mail">Email</label>
+                <br>
+                <input type="email" id="mail" name="user_mail" class="formulaire">
+            </div>
+            <div>
+                <label for="phone">Téléphone</label>
+                <br>
+                <input type="tel" id="phone" name="phone" class="formulaire" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required>
+            </div>
+            <div>
+                <label for="msg">Commentaire</label>
+                <br>
+                <textarea id="msg" name="user_message" class="formulaire"></textarea>
+            </div>
+            <div class="button">
+                <button type="submit">Envoyer ></button>
+            </div>
+        </div>
+    </form>
+    <footer></footer>
+    <script src="../javascript/formulaire.js" async></script>
+</body>
+
+</html>
