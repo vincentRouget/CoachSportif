@@ -1,8 +1,6 @@
 const menuBtn = document.querySelector('.menu-btn');
 const navMenu = document.querySelector('.nav-menu');
 
-let menuOpen = false;
-
 // This algorithm only concern animation of the burger button (the both position of the button on our page).
 // If menuOpen is true, then we add a classList named "open" to our .menuBtn.
 
