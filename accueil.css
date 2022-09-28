@@ -1,3 +1,80 @@
+:root {
+    --primary-color: #1A535C;
+    --secondary-color: #4ECDC4;
+    --third-color: #FFE66D;
+    --light: white;
+    --shadow-color: rgba(0, 0, 0, 0.7);
+    --border-color: rgba(0, 0, 0, 0.25);
+    --border-radius: 5px;
+    --font-size: 18px;
+    --font-family: roboto;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0%;
+    background-color: var(--primary-color);
+}
+
+#logosParagraphe {
+    display: flex;
+}
+
+div ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 20px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 20px;
+}
+
+div p {
+    margin: 0%;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 20px 10px 10px;
+    font-size: var(--font-size);
+    color: var(--light);
+    /* font-family: roboto; */
+    font-family: var(--font-family);
+}
+
+div ul li img {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    border-radius: var(--border-radius);
+    box-shadow: 5px 5px 15px var(--shadow-color);
+    border: 1px solid var(--border-color);
+    transition: transform .2s;
+}
+
+/* Background image */
+#imageBackground {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-image: url("https://images-ext-1.discordapp.net/external/vVES6_D3twvN9T4eT1jrnLTKo0V7iCOnbVbxjywfpCY/https/cdn.pixabay.com/photo/2015/07/02/10/23/training-828741__480.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 20%;
+}
+
+footer {
+
+    display: flex;
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 50px;
+    position: relative;
+    z-index: 10;
+
+}
+
 * {
     margin: 0px;
     padding: 0px;
