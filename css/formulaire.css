@@ -1,21 +1,29 @@
-body {
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    background-image: url("https://media.istockphoto.com/photos/notredamedebonport-church-seen-from-island-of-nantes-picture-id590269430?k=20&m=590269430&s=612x612&w=0&h=d3v16CrrhspkAWTnKsEmEsIlcUzA_fbHSeQLulQxChw=");
-    backdrop-filter: brightness(60%);
-    background-repeat: no-repeat;
-    background-size: cover;
+:root {
+    --primary-color: #1A535C;
+    --secondary-color: #4ECDC4;
+    --third-color: #FFE66D;
+    --light: white;
+    --shadow-color: rgba(0, 0, 0, 0.7);
+    --border-color: rgba(0, 0, 0, 0.25);
+    --border-radius: 5px;
+    --font-size: 18px;
+    --font-family: roboto;
+    --font-family-title: 'Lemon', cursive;
 }
 
-#pageFormulaire {
-    /* background-color: aqua; */
+body {
+    background-color: aqua;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-image: url("https://media.istockphoto.com/photos/notredamedebonport-church-seen-from-island-of-nantes-picture-id590269430?k=20&m=590269430&s=612x612&w=0&h=d3v16CrrhspkAWTnKsEmEsIlcUzA_fbHSeQLulQxChw=");
+    backdrop-filter: brightness(60%);
+    background-repeat: no-repeat; */
+    background-size: cover;
     box-sizing: content-box;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
 }
+
+
 
 #where {
     /* background-color: #1C6EA4; */
@@ -40,15 +48,15 @@ body {
 }
 
 #map {
+    background-color: yellow;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    /* background-color: yellow; */
 }
 
 form {
-    /* background-color: coral; */
+    background-color: coral;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,10 +64,10 @@ form {
 }
 
 #container {
+    /* background-color: blue; */
     width: 75%;
     justify-content: center;
     margin: 16px auto auto auto;
-    /* background-color: blue; */
 }
 
 .formulaire {
@@ -104,17 +112,7 @@ form>div>div>button {
 }
 
 @media screen and (min-width : 768px) {
-    body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 
-    #pageFormulaire {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-    }
 
     #borderMap {
         height: 70%;
