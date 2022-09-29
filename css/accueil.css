@@ -56,7 +56,6 @@ div ul li img {
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: 1;
     background-image: url("https://images-ext-1.discordapp.net/external/vVES6_D3twvN9T4eT1jrnLTKo0V7iCOnbVbxjywfpCY/https/cdn.pixabay.com/photo/2015/07/02/10/23/training-828741__480.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -65,13 +64,12 @@ div ul li img {
 }
 
 footer {
-
     display: flex;
     background-color: var(--secondary-color);
     width: 100%;
     height: 50px;
     position: relative;
-    z-index: 10;
+    z-index: 1;
 
 }
 
@@ -83,13 +81,10 @@ footer {
 
 /* HEADER SECTION */
 
-body {
-    background-color: #FF6B6B;
-}
-
 header {
     width: 100%;
     position: sticky;
+    z-index: 1;
 }
 
 .header {
