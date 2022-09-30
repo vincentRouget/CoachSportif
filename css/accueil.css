@@ -17,11 +17,12 @@ body {
     background-color: var(--primary-color);
 }
 
-#logosParagraphe {
+#containerIconesParagraphe {
     display: flex;
+    gap: 20px;
 }
 
-div ul {
+#containerIcones {
     display: flex;
     flex-direction: column;
     list-style-type: none;
@@ -30,24 +31,30 @@ div ul {
     margin: 10px 10px 10px 20px;
 }
 
-div p {
-    margin: 0%;
-    padding: 10px 10px 10px 10px;
-    margin: 10px 20px 10px 10px;
-    font-size: var(--font-size);
-    color: var(--light);
-    /* font-family: roboto; */
-    font-family: var(--font-family);
-}
-
-div ul li img {
-    display: flex;
+.style_prevu_kit {
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid black;
     width: 70px;
     height: 70px;
-    border-radius: var(--border-radius);
-    box-shadow: 5px 5px 15px var(--shadow-color);
-    border: 1px solid var(--border-color);
-    transition: transform .2s;
+    position: relative;
+    z-index: 2;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
+}
+
+.style_prevu_kit:hover {
+    box-shadow: 0px 0px 150px #000000;
+    z-index: 2;
+    transition: all 200ms ease-in;
+    transform: scale(1.5);
+}
+
+#textSalles {
+    display: block;
+    font-size: 20px;
+    color: white;
+    margin: 10px 10px 10px 0px;
+    padding: 10px 10px 10px 10px;
 }
 
 /* Background image */
