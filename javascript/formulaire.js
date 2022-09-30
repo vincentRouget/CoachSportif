@@ -23,19 +23,12 @@ fetch("./header.html")
             menuBtn.classList.remove('active');
             navMenu.classList.remove('active');
         }))
+    });
+
+fetch("./footer.html")
+    .then(response => {
+        return response.text()
     })
-
-
-
-
-
-
-
-
-// fetch("./footer.html")
-//     .then(response => {
-//         return response.text()
-//     })
-//     .then(data => {
-//         document.querySelector("footer").innerHTML = data;
-//     });
+    .then(data => {
+        document.querySelector("footer").innerHTML = data;
+    });
