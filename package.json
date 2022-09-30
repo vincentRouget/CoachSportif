@@ -1,0 +1,23 @@
+{
+  "name": "projet1_coach-sportif",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./javascript/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vincentRouget/PROJET1_Coach-Sportif.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vincentRouget/PROJET1_Coach-Sportif/issues"
+  },
+  "homepage": "https://github.com/vincentRouget/PROJET1_Coach-Sportif#readme",
+  "type": "commonjs",
+  "dependencies": {
+    "html-validator": "^6.0.1"
+  }
+}

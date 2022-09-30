@@ -1,20 +1,33 @@
+:root {
+    --primary-color: #1A535C;
+    --secondary-color: #4ECDC4;
+    --third-color: #FFE66D;
+    --light: white;
+    --shadow-color: rgba(0, 0, 0, 0.7);
+    --border-color: rgba(0, 0, 0, 0.25);
+    --border-radius: 5px;
+    --font-size: 18px;
+    --font-family: roboto;
+    --font-family-title: 'Lemon', cursive;
+}
+
 body {
+    /* background-color: aqua; */
     box-sizing: border-box;
-    width: 100%;
     margin: 0;
     padding: 0;
     background-image: url("https://media.istockphoto.com/photos/notredamedebonport-church-seen-from-island-of-nantes-picture-id590269430?k=20&m=590269430&s=612x612&w=0&h=d3v16CrrhspkAWTnKsEmEsIlcUzA_fbHSeQLulQxChw=");
-    backdrop-filter: brightness(60%);
     background-repeat: no-repeat;
     background-size: cover;
+    backdrop-filter: brightness(60%);
 }
 
-#pageFormulaire {
-    /* background-color: aqua; */
+#forward {
     box-sizing: content-box;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    height:52rem;
+
 }
 
 #where {
@@ -22,9 +35,11 @@ body {
     display: flex;
     justify-content: center;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
-    font-weight: 900;
-    font-size: 28px;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 10px 0px 20px 0px;
 }
 
 #googleMap {
@@ -35,16 +50,17 @@ body {
 }
 
 #borderMap {
-    border: 2px solid black;
+    border: 3px solid black;
     width: 85%;
+    margin: 0px 0px 40px 0px;
 }
 
 #map {
+    /* background-color: yellow; */
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    /* background-color: yellow; */
 }
 
 form {
@@ -56,10 +72,10 @@ form {
 }
 
 #container {
+    /* background-color: blue; */
     width: 75%;
     justify-content: center;
     margin: 16px auto auto auto;
-    /* background-color: blue; */
 }
 
 .formulaire {
@@ -79,45 +95,56 @@ form {
 label {
     color: white;
     font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #msg {
     height: 60px;
+    margin: 5px auto 32px auto;
 }
 
 .button {
     display: flex;
     justify-content: flex-start;
-    margin: 10px auto auto auto;
+    margin: 0px auto auto auto;
 }
 
 form>div>div>button {
     font-weight: bold;
     background-color: black;
     color: white;
-    height: 32px;
-    width: 90px;
+    font-size: 20px;
+    height: 50px;
+    width: 140px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     border: 0px solid #1C6EA4;
 }
 
+#name,
+#firstname,
+#mail,
+#phone {
+    height: 25px;
+    margin: 5px auto 18px auto;
+}
+
+
 @media screen and (min-width : 768px) {
-    body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+
+    #forward {
+        flex-direction: row-reverse;
     }
 
-    #pageFormulaire {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
+    #where {
+        font-size: 32px;
+        margin:-70px auto 50px auto;
     }
+
 
     #borderMap {
-        height: 70%;
+        height: 100%;
     }
 
     #googleMap {
@@ -139,11 +166,11 @@ form>div>div>button {
     }
 
     #container {
-        margin: 80px auto auto 100px;
+        margin: 140px auto auto 100px;
     }
 
     .formulaire {
-        margin: auto auto 25px auto;
+        margin: auto auto 30px auto;
         width: 80%;
     }
 
@@ -152,6 +179,6 @@ form>div>div>button {
     #mail,
     #phone {
         height: 30px;
-        margin: 5px auto 18px auto;
+        margin: 5px auto 40px auto;
     }
 }
