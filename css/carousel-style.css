@@ -22,10 +22,12 @@ section {
 }
 
 .slide {
-    position: absolute;
     inset: 0;
+    position: absolute;
     opacity: 0;
     transition-duration: 1, 5s;
+    z-index: 2;
+
 }
 
 .slide>img {
@@ -34,10 +36,14 @@ section {
     height: 100%;
     object-fit: cover;
     object-position: center;
+
+
+
 }
 
 .slide[data-active] {
     opacity: 1;
+
 }
 
 .carousel-button {
@@ -50,6 +56,8 @@ section {
     color: #F7FFF7;
     cursor: pointer;
     top: 50%;
+    z-index: 3;
+
 }
 
 .carousel-button:hover,
