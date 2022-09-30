@@ -106,15 +106,16 @@ label {
 .button {
     display: flex;
     justify-content: flex-start;
-    margin: 10px auto auto auto;
+    margin: 0px auto auto auto;
 }
 
 form>div>div>button {
     font-weight: bold;
     background-color: black;
     color: white;
-    height: 32px;
-    width: 90px;
+    font-size: 20px;
+    height: 50px;
+    width: 140px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
