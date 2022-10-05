@@ -40,7 +40,6 @@ body {
     font-size: 32px;
     margin: 10px 0px 20px 0px;
     text-shadow: 0px 0px 20px #000000;
-    padding-right: 100px;
 }
 
 
@@ -90,7 +89,6 @@ form {
 }
 
 .formulaire {
-    /* background-color: darkkhaki; */
     position: relative;
     padding: 2px;
     margin: auto auto 10px auto;
@@ -127,7 +125,7 @@ label {
 #msg {
     height: 100px;
     margin: 10px auto 30px auto;
-    width: 120%;
+    width: 115%;
     padding-top: 10px;
     padding-left: 20px;
     font-size: 24px;
@@ -167,26 +165,26 @@ form>div>div>button {
 
 .material-symbols-outlined {
     font-variation-settings:
-        'FILL' 1,
-        'wght' 700,
-        'GRAD' 0,
-        'opsz' 24
+    'FILL' 1,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 24
 }
 
 .material-symbols-outlined {
     font-variation-settings:
-        'FILL' 1,
-        'wght' 700,
-        'GRAD' 0,
-        'opsz' 24
+    'FILL' 1,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 24
 }
 
 .material-symbols-outlined {
     font-variation-settings:
-        'FILL' 1,
-        'wght' 700,
-        'GRAD' 0,
-        'opsz' 48
+    'FILL' 1,
+    'wght' 700,
+    'GRAD' 0,
+    'opsz' 48
 }
 
 #sendSpan {
@@ -216,29 +214,32 @@ form>div>div>button {
     text-align: center;
 }
 
+footer {
+    margin: 230px auto auto auto;
+}
 
 @media screen and (min-width : 768px) {
-
+    
     #forward {
         flex-direction: row-reverse;
     }
-
+    
     #where {
         font-size: 50px;
         margin: 20px auto 30px auto;
     }
-
-
+    
+    
     #borderMap {
         height: 90rem;
         width: 80%;
         margin: 0px 80px 40px 100px;
     }
-
+    
     #googleMap {
         height: 100%;
     }
-
+    
     #map {
         display: flex;
         justify-content: center;
@@ -248,20 +249,20 @@ form>div>div>button {
         margin: auto;
         height: 48em;
     }
-
+    
     #container {
         margin: 110px auto auto 90px;
         width: 100%;
     }
-
+    
     form {
         width: 40%;
     }
-
+    
     label {
         font-size: 32px;
     }
-
+    
     .formulaire {
         margin: auto auto 0px auto;
         width: 100%;
@@ -269,26 +270,27 @@ form>div>div>button {
         -moz-border-radius: 10px;
         border-radius: 10px;
     }
-
+    
     #name,
     #mail,
     #phone {
-        width: 60%;
+        width: 62%;
         height: 50px;
         margin: 5px auto 30px auto;
         padding-left: 70px;
     }
-
+    
     #name:hover,
     #mail:hover,
     #phone:hover {
         transition: all 200ms ease-in;
         transform: scale(1.1);
     }
-
+    
     #msg {
+        /* background-color: darkkhaki; */
         height: 150px;
-        width: 75%;
+        width: 70%;
         margin-bottom: 60px;
     }
 
@@ -303,6 +305,10 @@ form>div>div>button {
 
     .send:hover {
         transition: all 200ms ease-in;
-        transform: scale(1.1);
+        transform: scale(1.2);
+    }
+
+    footer {
+        margin: 60px auto auto auto;
     }
 }
