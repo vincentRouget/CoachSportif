@@ -27,7 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 52rem;
-    margin-bottom :-15%;
+    margin-bottom: -20%;
 }
 
 #where {
@@ -42,7 +42,6 @@ body {
     margin: 10px 0px 20px 0px;
     text-shadow: 0px 0px 20px #000000;
 }
-
 
 iframe {
     border-radius: 20px;
@@ -85,12 +84,9 @@ form {
     width: 70%;
     justify-content: center;
     margin-right: 100px;
-    ;
-    
 }
 
 .formulaire {
-
     position: relative;
     padding: 2px;
     margin: auto auto 10px auto;
@@ -139,7 +135,6 @@ label {
     display: flex;
     justify-content: flex-start;
     margin: 0px auto auto auto;
-    
 }
 
 form>div>div>button {
@@ -153,7 +148,6 @@ form>div>div>button {
     -moz-border-radius: 10px;
     border-radius: 20px;
     border: 3px solid white;
-    
 }
 
 
@@ -198,13 +192,11 @@ form>div>div>button {
     z-index: 1;
     padding-left: 150px;
     padding-top: 18px;
-    
 }
 
 .send {
     position: relative;
     z-index: 1;
-    
 }
 
 .icon {
@@ -221,22 +213,17 @@ form>div>div>button {
     text-align: center;
 }
 
-footer {
-    margin: 0px auto auto auto;
-}
-
 @media screen and (min-width : 768px) {
 
     #forward {
         flex-direction: row-reverse;
-        margin-bottom :-20%;
+        margin-bottom: -25%;
     }
 
     #where {
         font-size: 50px;
         margin: 20px auto 30px auto;
     }
-
 
     #borderMap {
         height: 90rem;
@@ -314,10 +301,6 @@ footer {
     .send:hover {
         transition: all 200ms ease-in;
         transform: scale(1.2);
-    }
-    .send {
-
-
     }
 
     footer {
