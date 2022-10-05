@@ -18,8 +18,8 @@ body{
     z-index: -1;
 }
 
-#sport1,
-#sport2 {
+.sport1,
+.sport2 {
     margin-top: 20px;
     height: 200px;
     transition: transform .2s;
@@ -28,8 +28,8 @@ body{
 
 
 
-#sport1 .top,
-#sport2 .top{
+.sport1 .top,
+.sport2 .top{
     display: flex;
     justify-content: space-around;
     width: 90%;
@@ -44,8 +44,8 @@ body{
     background: linear-gradient(90deg, rgba(0,68,105,1) 0%, rgba(16,109,130,1) 6%, rgba(30,137,180,1) 26%, rgba(106,245,255,1) 100%); box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 1);
     
 }
-#sport1 .top h3,
-#sport2 .top h3  {
+.sport1 .top h3,
+.sport2 .top h3  {
     margin-top: 12px;
     color: #ecf9fc;
     padding-inline-end: 40px;
@@ -54,8 +54,8 @@ body{
     text-shadow: 0px 5px 5px rgba(255, 107, 107, 0.25);
 }
 
-#sport1 .top img,
-#sport2 .top img {
+.sport1 .top img,
+.sport2 .top img {
     margin-top: 2px;
     height: 45px;
     width: 45px;
@@ -81,8 +81,8 @@ section article div {
     display: none;
 } 
 
-#sport1,
-#sport2 {
+.sport1,
+.sport2 {
     z-index: 2;
     margin-left: 2%;
     display: flex;
@@ -97,8 +97,8 @@ section article div {
     width: 50%;
 }
 
-#sport1 .top,
-#sport2 .top{
+.sport1 .top,
+.sport2 .top{
     margin-top: 24px;
     width: 50%;
     height: 50px;
@@ -108,13 +108,13 @@ section article div {
     color: #fff;
 }
 
-#sport2{
+.sport2{
     display: flex;
     flex-direction: row-reverse;
 }
 
-#sport1:hover,
-#sport2:hover{
+.sport1:hover,
+.sport2:hover{
     transform: scale(1.1);
     color: #FF6B6B;
 }
