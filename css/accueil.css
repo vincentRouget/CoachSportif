@@ -51,11 +51,34 @@ body {
 
 #textSalles {
     display: block;
-    font-size: 20px;
+    font-size: 90%;
     color: white;
-    margin: 10px 10px 10px 0px;
-    padding: 10px 10px 10px 10px;
+    margin-top: 1.5%;
+    margin: 1.5% 2% 2% 2%;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
+    background-color: rgba(153, 152, 152, 0.25);
+    border-radius: 10px;
+    padding: 5% 2% 0% 5%;
+
+
+
+
 }
+
+p {
+    font-family: 'Lemon', cursive;
+    font-style: normal;
+
+}
+
+span {
+    color: #F7FFF7;
+    font-size: 130%;
+    font-family: 'Lemon', cursive;
+    font-style: normal;
+}
+
+
 
 /* Background image */
 #imageBackground {
@@ -68,6 +91,7 @@ body {
     background-position: center;
     background-size: cover;
     opacity: 20%;
+
 }
 
 footer {
@@ -77,6 +101,8 @@ footer {
     height: 50px;
     position: relative;
     z-index: 1;
+    margin-top: 30%;
+
 
 }
 
