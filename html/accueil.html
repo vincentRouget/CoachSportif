@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gym Studio</title>
     <link rel="stylesheet" href="../css/accueil.css">
-    <link rel="stylesheet" href="../css/carousel-style.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,69 +20,144 @@
 <body>
     <div id="fixHeader">
     </div>
-    <section aria-label="Newest Photos">
-        <div class="carousel" data-carousel>
-            <button class="carousel-button prev" data-carousel-button="prev">&#x2770;</button>
-            <button class="carousel-button next" data-carousel-button="next">&#x2771;</button>
-            <ul data-slides id="slides">
-                <li class="slide" data-active>
-                    <img src="https://cdn.pixabay.com/photo/2016/02/03/22/35/gym-room-1178293_1280.jpg"
-                        alt="Sport Image #1">
-                </li>
-                <li class="slide">
-                    <img src="https://cdn.pixabay.com/photo/2017/01/08/10/41/sports-1962574_1280.jpg"
-                        alt="Sport Image #2">
-                </li>
-                <li class="slide">
-                    <img src="https://cdn.pixabay.com/photo/2014/11/11/15/24/gym-526996_1280.jpg" alt="Sport Image #3">
-                </li>
+    <main class="flex-container">
+
+        <section aria-label="Newest Photos">
+            <div class="carousel" data-carousel>
+                <button id="buttonmobileprev" class="carousel-button prev mobile"
+                    data-carousel-button="prev">&#x2770;</button>
+                <button id="buttonmobilenext" class="carousel-button next mobile"
+                    data-carousel-button="next">&#x2771;</button>
+                <ul data-slides id="slides_mobile">
+                    <li class="slide" data-active>
+                        <img src="https://images.unsplash.com/photo-1544033527-b192daee1f5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                            alt="Sport Image #1">
+                        <h2>Salle de Musculation</h2>
+                    <li class="slide">
+                        <img src="https://images.unsplash.com/photo-1596357395217-80de13130e92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                            alt="Sport Image #2">
+                        <h2>Programme Personnalisé</h2>
+                    </li>
+                    </li>
+                    <li class="slide">
+                        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80"
+                            alt="Sport Image #3">
+                        <h2>Salle de Cardio</h2>
+                    </li>
+                    <li class="slide">
+                        <img src="https://images.unsplash.com/photo-1616279967983-ec413476e824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&q=80"
+                            alt="Sport Image #4">
+                        <h2>Cours Collectifs</h2>
+                    </li>
+                    <li class="slide">
+                        <img src="https://images.unsplash.com/photo-1646656130703-8f95eed6a79b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNyb3NzJTIwZml0JTIwZ3ltfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60"
+                            alt="Sport Image #5">
+                        <h2>Salle de Cross-Fit</h2>
+                    </li>
+                    <li class="slide">
+                        <img src="https://images.unsplash.com/photo-1616279969096-54b228f5f103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+                            alt="Sport Image #6">
+                        <h2>Nos Coachs vous accompagnent</h2>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Icones des 6 disciplines and 2nd carousel -->
+        <div id="containerIconesParagraphe">
+            <ul id="containerIcones">
+                <li> <a href="./disciplines.html"><img class="style_prevu_kit"
+                            src="https://cdn.discordapp.com/attachments/1023897895344283698/1024590531449331722/Muscu.PNG"
+                            alt=""></a></li>
+                <li> <a href="./disciplines.html"><img class="style_prevu_kit"
+                            src="https://cdn.discordapp.com/attachments/1023897895344283698/1024590529494798357/Cardio_Training.PNG"
+                            alt=""></a></li>
+                <li> <a href="./disciplines.html"><img class="style_prevu_kit"
+                            src="https://cdn.discordapp.com/attachments/1023897895344283698/1024590529968738344/Cardio.PNG"
+                            alt=""></a></li>
+                <li> <a href="./disciplines.html"><img class="style_prevu_kit"
+                            src="https://cdn.discordapp.com/attachments/1023897895344283698/1024590531919101982/Shadow_boxing.PNG"
+                            alt=""></a></li>
+                <li> <a href="./disciplines.html"><img class="style_prevu_kit"
+                            src="https://cdn.discordapp.com/attachments/1023897895344283698/1024590531025702962/Hit.PNG"
+                            alt=""></a></li>
+                <li> <a href="./disciplines.html"><img class="style_prevu_kit"
+                            src="https://cdn.discordapp.com/attachments/1023897895344283698/1024590530610483270/Cours_co.PNG"
+                            alt=""></a></li>
+
             </ul>
+            <section aria-label="Newest Photos">
+                <div class="carousel desktop" data-carousel>
+                    <button class="carousel-button prev" data-carousel-button="prev">&#x2770;</button>
+                    <button class="carousel-button next" data-carousel-button="next">&#x2771;</button>
+                    <ul data-slides id="slides">
+                        <li class="slide" data-active>
+                            <img src="https://images.unsplash.com/photo-1544033527-b192daee1f5b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                                alt="Sport Image #1">
+                            <h2>Salle de Musculation</h2>
+                        <li class="slide">
+                            <img src="https://images.unsplash.com/photo-1596357395217-80de13130e92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                                alt="Sport Image #2">
+                            <h2>Programme Personnalisé</h2>
+                        </li>
+                        </li>
+                        <li class="slide">
+                            <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1075&q=80"
+                                alt="Sport Image #3">
+                            <h2>Salle de Cardio</h2>
+                        </li>
+                        <li class="slide">
+                            <img src="https://images.unsplash.com/photo-1616279967983-ec413476e824?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&q=80"
+                                alt="Sport Image #4">
+                            <h2>Cours Collectifs</h2>
+                        </li>
+                        <li class="slide">
+                            <img src="https://images.unsplash.com/photo-1646656130703-8f95eed6a79b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNyb3NzJTIwZml0JTIwZ3ltfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60"
+                                alt="Sport Image #5">
+                            <h2>Salle de Cross-Fit</h2>
+                        </li>
+                        <li class="slide">
+                            <img src="https://images.unsplash.com/photo-1616279969096-54b228f5f103?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
+                                alt="Sport Image #6">
+                            <h2>Nos Coachs vous accompagnent</h2>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <p id="textSalles">
+                <span>
+                    Salle de Musculation
+                </span><br> <br> Lorem, dolor sit amet consectetur adipisicing elit.
+                Fugiat aperiam in
+                reprehenderit
+                debitis
+                minima
+                officiis, dolores vero praesentium temporibus sapiente commodi quasi saepe placeat accusamus
+                <br><br>
+                <span>
+                    Salle de Cardio
+                </span> <br><br> Molestias iste cupiditate laudantium necessitatibus
+                inventore
+                soluta totam
+                officiis adipisci rerum recusandae esse accusantium cum, ex deleniti placeat fugiat!
+                Lorem, ipsum dolor sit amet <br><br>
+                <span>
+                    Salle de Cross-Fit
+                </span>
+                <br><br> Fugiat aperiam in
+                reprehenderit
+                debitis
+                minima
+                officiis, dolores vero praesentium temporibus sapiente commodi quasi saepe placeat accusamus
+                eligendi porro
+                nobis provident error corporis
+
+            </p>
+
         </div>
-    </section>
-    <!-- Icones des 6 disciplines -->
-    <div id="containerIconesParagraphe">
-        <ul id="containerIcones">
-            <li> <a href="./disciplines.html"><img class="style_prevu_kit"
-                        src="https://cdn.discordapp.com/attachments/1023897895344283698/1024590531449331722/Muscu.PNG"
-                        alt=""></a></li>
-            <li> <a href="./disciplines.html"><img class="style_prevu_kit"
-                        src="https://cdn.discordapp.com/attachments/1023897895344283698/1024590529494798357/Cardio_Training.PNG"
-                        alt=""></a></li>
-            <li> <a href="./disciplines.html"><img class="style_prevu_kit"
-                        src="https://cdn.discordapp.com/attachments/1023897895344283698/1024590529968738344/Cardio.PNG"
-                        alt=""></a></li>
-            <li> <a href="./disciplines.html"><img class="style_prevu_kit"
-                        src="https://cdn.discordapp.com/attachments/1023897895344283698/1024590531919101982/Shadow_boxing.PNG"
-                        alt=""></a></li>
-            <li> <a href="./disciplines.html"><img class="style_prevu_kit"
-                        src="https://cdn.discordapp.com/attachments/1023897895344283698/1024590531025702962/Hit.PNG"
-                        alt=""></a>
-            </li>
-            <li> <a href="./disciplines.html"><img class="style_prevu_kit"
-                        src="https://cdn.discordapp.com/attachments/1023897895344283698/1024590530610483270/Cours_co.PNG"
-                        alt=""></a></li>
-        </ul>
-        <p id="textSalles">Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br><br> Fugiat aperiam in
-            reprehenderit
-            debitis
-            minima
-            officiis, dolores vero praesentium temporibus sapiente commodi quasi saepe placeat accusamus
-            eligendi porro
-            nobis provident error corporis! <br><br> Molestias iste cupiditate laudantium necessitatibus
-            inventore
-            soluta totam
-            officiis adipisci rerum recusandae esse accusantium cum, ex deleniti placeat fugiat! <br> <br>Fugiat aperiam
-            in
-            reprehenderit
-            debitis
-            minima
-            officiis, dolores vero praesentium temporibus sapiente commodi quasi saepe placeat accusamus
-            eligendi porro
-            nobis provident error corporis! </p>
-    </div>
-    </div>
+
+    </main>
+
     <div id="imageBackground"></div>
-    </div>
 
     <footer>
         <p> © 2022 First project Wilders.</p>
