@@ -7,7 +7,7 @@
     --border-color: rgba(0, 0, 0, 0.25);
     --border-radius: 5px;
     --font-size: 18px;
-    --font-family: roboto;
+    --font-family: 'Dosis', sans-serif;
     --font-family-title: 'Lemon', cursive;
 }
 
@@ -118,6 +118,7 @@ label {
     height: 40px;
     margin: 10px auto 30px auto;
     padding-left: 90px;
+    font-style: oblique;
     font-size: 24px;
     font-family: var(--font-family);
 }
@@ -128,7 +129,7 @@ label {
     width: 115%;
     padding-top: 10px;
     padding-left: 20px;
-    font-size: 24px;
+    font-size: 28px;
     font-family: var(--font-family);
 }
 
@@ -165,26 +166,26 @@ form>div>div>button {
 
 .material-symbols-outlined {
     font-variation-settings:
-    'FILL' 1,
-    'wght' 700,
-    'GRAD' 0,
-    'opsz' 24
+        'FILL' 1,
+        'wght' 700,
+        'GRAD' 0,
+        'opsz' 24
 }
 
 .material-symbols-outlined {
     font-variation-settings:
-    'FILL' 1,
-    'wght' 700,
-    'GRAD' 0,
-    'opsz' 24
+        'FILL' 1,
+        'wght' 700,
+        'GRAD' 0,
+        'opsz' 24
 }
 
 .material-symbols-outlined {
     font-variation-settings:
-    'FILL' 1,
-    'wght' 700,
-    'GRAD' 0,
-    'opsz' 48
+        'FILL' 1,
+        'wght' 700,
+        'GRAD' 0,
+        'opsz' 48
 }
 
 #sendSpan {
@@ -219,27 +220,27 @@ footer {
 }
 
 @media screen and (min-width : 768px) {
-    
+
     #forward {
         flex-direction: row-reverse;
     }
-    
+
     #where {
         font-size: 50px;
         margin: 20px auto 30px auto;
     }
-    
-    
+
+
     #borderMap {
         height: 90rem;
         width: 80%;
         margin: 0px 80px 40px 100px;
     }
-    
+
     #googleMap {
         height: 100%;
     }
-    
+
     #map {
         display: flex;
         justify-content: center;
@@ -249,20 +250,20 @@ footer {
         margin: auto;
         height: 48em;
     }
-    
+
     #container {
         margin: 110px auto auto 90px;
         width: 100%;
     }
-    
+
     form {
         width: 40%;
     }
-    
+
     label {
         font-size: 32px;
     }
-    
+
     .formulaire {
         margin: auto auto 0px auto;
         width: 100%;
@@ -270,7 +271,7 @@ footer {
         -moz-border-radius: 10px;
         border-radius: 10px;
     }
-    
+
     #name,
     #mail,
     #phone {
@@ -279,14 +280,14 @@ footer {
         margin: 5px auto 30px auto;
         padding-left: 70px;
     }
-    
+
     #name:hover,
     #mail:hover,
     #phone:hover {
         transition: all 200ms ease-in;
         transform: scale(1.1);
     }
-    
+
     #msg {
         /* background-color: darkkhaki; */
         height: 150px;
@@ -307,8 +308,12 @@ footer {
         transition: all 200ms ease-in;
         transform: scale(1.2);
     }
+    .send {
+
+
+    }
 
     footer {
-        margin: 60px auto auto auto;
+        margin: 0px auto auto auto;
     }
 }
