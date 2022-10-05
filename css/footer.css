@@ -21,8 +21,6 @@ footer {
     margin-top: 30%;
     border-top: 1px dashed #000;
     color: #333;
-
-
 }
 
 
@@ -142,5 +140,12 @@ footer h3 {
 
     .footer-icons h3 {
         width: 100%;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    footer {
+        margin-top: 60%;
     }
 }
