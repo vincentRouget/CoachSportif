@@ -13,16 +13,16 @@
 }
 
 footer {
-    /* flex: 1 0 auto; */
-    border-top: 1px dashed #000;
+    display: flex;
+    background-color: var(--secondary-color);
     width: 100%;
-    height: 100%;
-    background: #4ECDC4;
+    position: relative;
+    z-index: 1;
+    margin-top: 30%;
+    border-top: 1px dashed #000;
     color: #333;
-
-
-
 }
+
 
 footer h3 {
     text-align: center;
@@ -30,7 +30,7 @@ footer h3 {
 }
 
 .footer-content {
-    margin: 0 auto;
+    margin: 0 0;
     font-family: 'Rajdhani', sans-serif;
     color: var(--light);
     font-size: var(--font-size);

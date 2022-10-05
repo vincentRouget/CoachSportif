@@ -10,7 +10,6 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: #4ECDC4;
-    padding-block: 1rem;
     width: 100%;
 }
 
@@ -205,6 +204,6 @@ nav {
 
     .white-shapes {
         position: absolute;
-        margin-top: 74px;
+        top: 74px;
     }
 }
