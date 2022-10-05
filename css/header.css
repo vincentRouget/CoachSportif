@@ -155,7 +155,7 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
-    .nav-menu {
+    nav {
         display: none;
     }
 
@@ -201,5 +201,10 @@ nav {
     .nav-menu li a {
         font-size: 1.2rem;
         font-family: 'Lemon', cursive;
+    }
+
+    .white-shapes {
+        position: absolute;
+        margin-top: 74px;
     }
 }
