@@ -21,12 +21,29 @@ section {
     list-style: none;
 }
 
+
 .slide {
     inset: 0;
     position: absolute;
     opacity: 0;
-    transition-duration: 1, 5s;
+    transition-duration: 1.5s;
     z-index: 2;
+
+}
+
+h2 {
+    position: absolute;
+    color: #F7FFF7;
+    font-family: 'Lemon', cursive;
+    font-style: normal;
+    top: 40%;
+    left: 25%;
+    right: 25%;
+    text-align: center;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
+    background-color: rgba(153, 152, 152, 0.75);
+    border-radius: 10px;
+    font-size: 100%;
 
 }
 
@@ -36,8 +53,6 @@ section {
     height: 100%;
     object-fit: cover;
     object-position: center;
-
-
 
 }
 
@@ -71,4 +86,63 @@ section {
 
 .carousel-button.next {
     right: 1rem;
+}
+
+
+@media screen and (max-width:767px) {
+    .desktop {
+        display: none;
+        position: absolute;
+    }
+
+    #textSalles {
+        position: relative;
+        margin: 3% 5% 0% -23%;
+    }
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .carousel {
+        display: none;
+        position: absolute;
+    }
+
+    .desktop {
+        display: block;
+        margin-top: 2%;
+        width: 50%;
+        height: 91%;
+
+    }
+
+    #containerIconesParagraphe {
+        position: relative;
+
+    }
+
+    #textSalles {
+        margin-left: 36%;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
+        background-color: rgba(153, 152, 152, 0.25);
+        border-radius: 10px;
+        padding: 2% 2% 2% 1%;
+    }
+
+    h2 {
+
+        color: #F7FFF7;
+        font-family: 'Lemon', cursive;
+        font-style: normal;
+        top: 46%;
+        left: 25%;
+        right: 25%;
+        text-align: center;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
+        background-color: rgba(153, 152, 152, 0.75);
+        border-radius: 10px;
+        font-size: 150%;
+
+    }
 }
