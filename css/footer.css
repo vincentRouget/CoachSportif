@@ -13,11 +13,16 @@
 }
 
 footer {
-    margin-top: 200px;
+    display: flex;
+    background-color: var(--secondary-color);
     width: 100%;
-    background: rgba(78, 205, 196, 0.30);
+    position: relative;
+    z-index: 1;
+    margin-top: 30%;
+    border-top: 1px dashed #000;
     color: #333;
 }
+
 
 footer h3 {
     text-align: center;
@@ -25,7 +30,7 @@ footer h3 {
 }
 
 .footer-content {
-    margin: 0 auto;
+    margin: 0 0;
     font-family: 'Rajdhani', sans-serif;
     color: var(--light);
     font-size: var(--font-size);
@@ -135,5 +140,12 @@ footer h3 {
 
     .footer-icons h3 {
         width: 100%;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    footer {
+        margin-top: 60%;
     }
 }

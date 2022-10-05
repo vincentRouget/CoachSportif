@@ -67,7 +67,7 @@ body {
     padding: 5% 2% 0% 5%;
 }
 
-p {
+main p {
     font-family: 'Lemon', cursive;
     font-style: normal;
 
@@ -84,7 +84,7 @@ span {
 #imageBackground {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 120%;
     position: absolute;
     background-image: url("https://images-ext-1.discordapp.net/external/vVES6_D3twvN9T4eT1jrnLTKo0V7iCOnbVbxjywfpCY/https/cdn.pixabay.com/photo/2015/07/02/10/23/training-828741__480.jpg");
     background-repeat: no-repeat;
