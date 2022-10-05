@@ -65,7 +65,7 @@ body {
 
 }
 
-p {
+main p {
     font-family: 'Lemon', cursive;
     font-style: normal;
 
@@ -84,13 +84,14 @@ span {
 #imageBackground {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 120%;
     position: absolute;
     background-image: url("https://images-ext-1.discordapp.net/external/vVES6_D3twvN9T4eT1jrnLTKo0V7iCOnbVbxjywfpCY/https/cdn.pixabay.com/photo/2015/07/02/10/23/training-828741__480.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     opacity: 20%;
+
 
 }
 
@@ -258,8 +259,41 @@ nav {
     border-radius: 100% 0% 100% 0% / 0% 22% 78% 100%;
 }
 
+@media screen and (min-width:300px) and (max-width:450px) {
+    #textSalles {
+        position: relative;
+        margin: 3% 5% 0% -23%;
+        font-size: 65%;
+
+    }
+}
+
+@media screen and (min-width:450px) and (max-width:768px) {
+
+    #textSalles {
+        position: relative;
+        margin: 3% 5% 0% -23%;
+        font-size: 90%;
+    }
+}
 
 @media screen and (min-width: 768px) {
+    #containerIconesParagraphe {
+        position: relative;
+
+    }
+
+    #textSalles {
+        margin-left: 36%;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
+        background-color: rgba(153, 152, 152, 0.25);
+        border-radius: 10px;
+        padding: 2% 2% 2% 1%;
+    }
+
+
+
+
     header {
         background-color: #4ECDC4;
         display: flex;
