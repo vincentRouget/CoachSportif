@@ -95,12 +95,9 @@ h2 {
         position: absolute;
     }
 
-    #textSalles {
-        position: relative;
-        margin: 3% 5% 0% -23%;
-    }
-
 }
+
+
 
 
 @media screen and (min-width: 768px) {
@@ -115,19 +112,6 @@ h2 {
         width: 50%;
         height: 91%;
 
-    }
-
-    #containerIconesParagraphe {
-        position: relative;
-
-    }
-
-    #textSalles {
-        margin-left: 36%;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
-        background-color: rgba(153, 152, 152, 0.25);
-        border-radius: 10px;
-        padding: 2% 2% 2% 1%;
     }
 
     h2 {
