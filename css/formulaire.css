@@ -16,7 +16,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-image: url("https://cdn.pixabay.com/photo/2013/02/10/23/25/great-lakes-80383_1280.jpg");
+    background-image: url("https://images.pexels.com/photos/3775566/pexels-photo-3775566.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     backdrop-filter: brightness(80%);
@@ -27,7 +27,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 52rem;
-}
+ }
 
 #where {
     /* background-color: #1C6EA4; */
@@ -40,10 +40,11 @@ body {
     font-size: 32px;
     margin: 10px 0px 20px 0px;
     text-shadow: 0px 0px 20px #000000;
+    padding-right: 100px;
 }
 
 #googleMap {
-    height: 250px;
+    height: 300px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -53,7 +54,7 @@ body {
     border: 4px solid black;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 30px 0px rgba(255, 255, 255, 0.5);
     box-shadow: 0px 10px 13px -7px #000000, 0px 0px 30px 0px rgba(255, 255, 255, 0.5);
-    width: 95%;
+    width: 85%;
     margin: 0px 0px 40px 0px;
     border-radius: 20px;
 }
@@ -219,12 +220,12 @@ form>div>div>button {
 
     #where {
         font-size: 50px;
-        margin: -80px auto 20px auto;
+        margin: 20px auto 30px auto;
     }
 
 
     #borderMap {
-        height: 100%;
+        height: 90rem;
         margin-right: 50px;
     }
 
@@ -239,7 +240,7 @@ form>div>div>button {
         align-items: center;
         width: 60%;
         margin: auto;
-        height: 35em;
+        height: 48em;
     }
 
     #container {
