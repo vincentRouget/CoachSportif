@@ -122,7 +122,7 @@ footer h3 {
 @media screen and (max-width: 720px) {
 
     footer {
-        min-height: 114%;
+        height: 100%;
     }
 
     .footer-bloc {
