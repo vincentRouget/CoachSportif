@@ -93,3 +93,35 @@ span {
     opacity: 20%;
 
 }
+
+@media screen and (min-width:300px) and (max-width:450px) {
+    #textSalles {
+        position: relative;
+        margin: 3% 5% 0% -23%;
+        font-size: 65%;
+    }
+}
+
+@media screen and (min-width:450px) and (max-width:767px) {
+
+    #textSalles {
+        position: relative;
+        margin: 3% 5% 0% -23%;
+        font-size: 90%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #containerIconesParagraphe {
+        position: relative;
+
+    }
+
+    #textSalles {
+        margin-left: 36%;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 1);
+        background-color: rgba(153, 152, 152, 0.25);
+        border-radius: 10px;
+        padding: 2% 2% 2% 1%;
+    }
+}

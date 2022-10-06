@@ -66,7 +66,7 @@ iframe {
     border: 4px solid black;
     -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 30px 0px rgba(255, 255, 255, 0.5);
     box-shadow: 0px 10px 13px -7px #000000, 0px 0px 30px 0px rgba(255, 255, 255, 0.5);
-    width: 95%;
+    width: 85%;
     margin: 0px 0px 40px 0px;
     border-radius: 20px;
 }
@@ -107,14 +107,15 @@ label {
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 0px 0px 20px #000000;
     font-style: italic;
+    margin-left: 10px;
 }
 
 #name,
 #mail,
 #phone {
-    width: 100%;
+    width: 90%;
     height: 40px;
-    margin: 10px auto 30px auto;
+    margin: 10px auto 30px 10px;
     padding-left: 90px;
     font-style: oblique;
     font-size: 24px;
@@ -123,7 +124,7 @@ label {
 
 #msg {
     height: 100px;
-    margin: 10px auto 30px auto;
+    margin: 10px auto 30px 10px;
     width: 115%;
     padding-top: 10px;
     padding-left: 20px;
@@ -134,7 +135,7 @@ label {
 .button {
     display: flex;
     justify-content: flex-start;
-    margin: 0px auto auto auto;
+    margin: 0px auto 20px 10px;
 }
 
 form>div>div>button {
@@ -273,24 +274,27 @@ form>div>div>button {
         height: 50px;
         margin: 5px auto 30px auto;
         padding-left: 70px;
+        transition: all 300ms ease-in;
     }
 
     #name:hover,
     #mail:hover,
     #phone:hover {
-        transition: all 200ms ease-in;
+        transition: all 300ms ease-in;
         transform: scale(1.1);
     }
 
     #msg {
         /* background-color: darkkhaki; */
         height: 150px;
-        width: 70%;
+        width: 72%;
         margin-bottom: 60px;
+        margin-left: -1px;
+        transition: all 300ms ease-in;
     }
 
     #msg:hover {
-        transition: all 200ms ease-in;
+        transition: all 300ms ease-in;
         transform: scale(1.1);
     }
 
