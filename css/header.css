@@ -1,21 +1,3 @@
-:root {
-    --primary-color: #1A535C;
-    --secondary-color: #4ECDC4;
-    --third-color: #FFE66D;
-    --light: white;
-    --shadow-color: rgba(0, 0, 0, 0.7);
-    --border-color: rgba(0, 0, 0, 0.25);
-    --border-radius: 5px;
-    --font-size: 18px;
-    --font-family: roboto;
-    --font-family-title: 'Lemon', cursive;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
 /* HEADER SECTION */
 
 header {
@@ -27,20 +9,23 @@ header {
 .header {
     display: flex;
     justify-content: space-between;
-    background-color: var(--secondary-color);
-    padding-block: 1rem;
+    background-color: #4ECDC4;
     width: 100%;
+    height: 72px;
 }
 
 .header h1 {
     display: flex;
+    align-items: center;
     margin-left: 1rem;
-    font-family: var(--font-family-title);
-    color: #F7FFF7;
+    font-family: 'Lemon', cursive;
     text-shadow: 0px 10px 10px rgba(255, 107, 107, 0.5);
 }
 
-/* THIS PART CONCERN WHAT HAPPEN WHEN WE CLICK ON BUTTON, FOR SCREENS UNDER 768px */
+.header h1 a {
+    text-decoration: none;
+    color: #F7FFF7;
+}
 
 /* BURGER MENU */
 
@@ -83,7 +68,11 @@ header {
     transform: translateY(16px);
 }
 
-/* ANIMATION PART */
+.nav-menu-screen {
+    display: none;
+}
+
+/* ANIMATION PART OF THE BURGER MENU */
 
 .menu-btn.open .menu-btn__burger {
     transform: translateX(-50px);
@@ -99,34 +88,32 @@ header {
     transform: rotate(-45deg) translate(35px, 35px);
 }
 
-/* SECTION THAT PLACE THE MENU OF THE NAV-BAR */
+/* SECTION THAT PLACE THE DYNAMIC MENU OF THE NAV-BAR */
 
 .nav-menu {
+    display: flex;
+    align-items: flex-end;
     flex-direction: column;
-    text-align: center;
+    font-family: 'Lemon';
     transition: 0.3s;
     transition-duration: 1s;
     transform: translateX(-50%);
     opacity: 0;
+    background-color: rgba(0, 0, 0, 0.50);
+    width: 100%;
+    gap: 8px;
+    padding-right: 10px;
 }
 
 .affiche {
-    background-color: rgba(78, 205, 196, 0.8);
     transform: translateX(0);
     opacity: 1;
 }
 
-
 /* NAV - LIST SECTION */
 
 nav {
-    display: flex;
     align-items: center;
-}
-
-.nav-menu {
-    text-align: center;
-    width: 70%;
 }
 
 .nav-menu li {
@@ -134,68 +121,76 @@ nav {
 }
 
 .nav-menu li a {
-    color: white;
+    color: #F7FFF7;
     text-decoration: none;
-    visibility: visible;
-}
-
-.nav-menu {
-    padding-right: 10px;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: flex-end;
-    gap: 8px;
 }
 
 .nav-link {
     transition: 0.7s ease;
-    font-family: var(--font-family-title);
-    opacity: 1;
 }
 
 .nav-link:hover {
     color: #FF6B6B;
 }
 
-/* GEOMETRIC SHAPE UNDER THE NAV-BAR */
+/* WHITE SHAPES UNDER THE NAV-BAR */
+
+.white-shapes {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+}
 
 #rectangle-shape {
-    position: absolute;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     height: 32px;
     width: 100%;
 }
 
 #triangle-shape {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 70px 2000px 0 0px;
-    border-color: white transparent transparent transparent;
+    background-color: rgb(255, 255, 255);
+    height: 32px;
+    width: 100%;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
 }
 
-
 @media screen and (min-width: 768px) {
-    header {
-        background-color: var(--secondary-color);
+    nav {
+        display: none;
+    }
+
+    .nav-menu-screen {
         display: flex;
+        gap: 32px;
+        padding-right: 1rem;
+        align-items: center;
+    }
+
+    .nav-menu-screen li {
+        list-style: none;
+    }
+
+    .nav-menu-screen li a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-family: 'Lemon';
+        color: #F7FFF7;
+        text-shadow: 1px 0px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    .nav-link:hover {
+        color: #FF6B6B;
     }
 
     .menu-btn {
         display: none;
     }
 
-    nav {
-        width: 80%;
-        position: sticky;
-    }
-
     .nav-menu {
+        padding: 50px;
         flex-direction: row;
-        justify-content: flex-end;
-        background-color: var(--secondary-color);
+        background-color: #4ECDC4;
         visibility: visible;
         opacity: 1;
         transition: none;
@@ -204,20 +199,13 @@ nav {
         padding-right: 1rem;
     }
 
-
     .nav-menu li a {
-        font-size: 1.4rem;
-        font-family: var(--font-family-title);
-        color: #F7FFF7;
-        text-shadow: -1px 0px 3px rgba(0, 0, 0, 1);
+        font-size: 1.2rem;
+        font-family: 'Lemon', cursive;
     }
 
-    #rectangle-shape {
-        margin-top: 74px;
+    .white-shapes {
+        position: absolute;
+        top: 72px;
     }
-
-    #triangle-shape {
-        margin-top: 74px;
-    }
-
 }

@@ -7,7 +7,7 @@
     --border-color: rgba(0, 0, 0, 0.25);
     --border-radius: 5px;
     --font-size: 18px;
-    --font-family: roboto;
+    --font-family: 'Dosis', sans-serif;
     --font-family-title: 'Lemon', cursive;
 }
 
@@ -16,18 +16,18 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-image: url("https://media.istockphoto.com/photos/notredamedebonport-church-seen-from-island-of-nantes-picture-id590269430?k=20&m=590269430&s=612x612&w=0&h=d3v16CrrhspkAWTnKsEmEsIlcUzA_fbHSeQLulQxChw=");
+    background-image: url("https://images.pexels.com/photos/3775566/pexels-photo-3775566.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: brightness(60%);
+    backdrop-filter: brightness(80%);
 }
 
 #forward {
     box-sizing: content-box;
     display: flex;
     flex-direction: column;
-    height:52rem;
-
+    height: 52rem;
+    margin-bottom: -20%;
 }
 
 #where {
@@ -38,29 +38,37 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 32px;
     margin: 10px 0px 20px 0px;
+    text-shadow: 0px 0px 20px #000000;
+}
+
+iframe {
+    border-radius: 20px;
+}
+
+#map {
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #googleMap {
-    height: 250px;
+    height: 300px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
 #borderMap {
-    border: 3px solid black;
-    width: 85%;
+    border: 4px solid black;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 30px 0px rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 10px 13px -7px #000000, 0px 0px 30px 0px rgba(255, 255, 255, 0.5);
+    width: 95%;
     margin: 0px 0px 40px 0px;
-}
-
-#map {
-    /* background-color: yellow; */
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    border-radius: 20px;
 }
 
 form {
@@ -73,34 +81,54 @@ form {
 
 #container {
     /* background-color: blue; */
-    width: 75%;
+    width: 70%;
     justify-content: center;
-    margin: 16px auto auto auto;
+    margin-right: 100px;
 }
 
 .formulaire {
-    /* background-color: darkkhaki; */
+    position: relative;
     padding: 2px;
     margin: auto auto 10px auto;
     width: 100%;
-    background-color: #DDDDDD;
+    background-color: #EEEEEE;
     border: 0px solid #1C6EA4;
-    -webkit-border-radius: 6px 0px 6px 0px;
-    -moz-border-radius: 6px 0px 6px 0px;
-    border-radius: 6px 0px 6px 0px;
-    -webkit-box-shadow: 7px 7px 10px 0px rgba(0, 0, 0, 0.49);
-    box-shadow: 7px 7px 10px 0px rgba(0, 0, 0, 0.49);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 5px 16px 0px #0B325E, 10px 10px 30px 5px rgba(0, 0, 0, 0.8);
+    box-shadow: 2px 5px 16px 0px #0B325E, 10px 10px 30px 5px rgba(0, 0, 0, 0.8);
 }
 
 label {
     color: white;
+    font-size: 24px;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 20px #000000;
+    font-style: italic;
+}
+
+#name,
+#mail,
+#phone {
+    width: 100%;
+    height: 40px;
+    margin: 10px auto 30px auto;
+    padding-left: 90px;
+    font-style: oblique;
+    font-size: 24px;
+    font-family: var(--font-family);
 }
 
 #msg {
-    height: 60px;
-    margin: 5px auto 32px auto;
+    height: 100px;
+    margin: 10px auto 30px auto;
+    width: 115%;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: 28px;
+    font-family: var(--font-family);
 }
 
 .button {
@@ -113,46 +141,98 @@ form>div>div>button {
     font-weight: bold;
     background-color: black;
     color: white;
-    font-size: 20px;
-    height: 50px;
-    width: 140px;
+    font-size: 24px;
+    height: 60px;
+    width: 200px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    border-radius: 10px;
-    border: 0px solid #1C6EA4;
+    border-radius: 20px;
+    border: 3px solid white;
 }
 
-#name,
-#firstname,
-#mail,
-#phone {
-    height: 25px;
-    margin: 5px auto 18px auto;
+
+.input-icons span {
+    position: absolute;
+    z-index: 1;
+    margin: 12px auto auto 12px;
 }
 
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 700,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 700,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 700,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+#sendSpan {
+    color: white;
+    position: absolute;
+    z-index: 1;
+    padding-left: 150px;
+    padding-top: 18px;
+}
+
+.send {
+    position: relative;
+    z-index: 1;
+}
+
+.icon {
+    min-width: 40px;
+}
+
+.input-icons span {
+    margin: 18px auto auto 14px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
 
 @media screen and (min-width : 768px) {
 
     #forward {
         flex-direction: row-reverse;
+        margin-bottom: -25%;
     }
 
     #where {
-        font-size: 32px;
-        margin:-70px auto 50px auto;
+        font-size: 50px;
+        margin: 20px auto 30px auto;
     }
 
-
     #borderMap {
-        height: 100%;
+        height: 90rem;
+        width: 80%;
+        margin: 0px 80px 40px 100px;
     }
 
     #googleMap {
         height: 100%;
-    }
-
-    form {
-        width: 40%;
     }
 
     #map {
@@ -162,23 +242,68 @@ form>div>div>button {
         align-items: center;
         width: 60%;
         margin: auto;
-        height: 35em;
+        height: 48em;
     }
 
     #container {
-        margin: 140px auto auto 100px;
+        margin: 110px auto auto 90px;
+        width: 100%;
+    }
+
+    form {
+        width: 40%;
+    }
+
+    label {
+        font-size: 32px;
     }
 
     .formulaire {
-        margin: auto auto 30px auto;
-        width: 80%;
+        margin: auto auto 0px auto;
+        width: 100%;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
     }
 
     #name,
-    #firstname,
     #mail,
     #phone {
-        height: 30px;
-        margin: 5px auto 40px auto;
+        width: 62%;
+        height: 50px;
+        margin: 5px auto 30px auto;
+        padding-left: 70px;
+    }
+
+    #name:hover,
+    #mail:hover,
+    #phone:hover {
+        transition: all 200ms ease-in;
+        transform: scale(1.1);
+    }
+
+    #msg {
+        /* background-color: darkkhaki; */
+        height: 150px;
+        width: 70%;
+        margin-bottom: 60px;
+    }
+
+    #msg:hover {
+        transition: all 200ms ease-in;
+        transform: scale(1.1);
+    }
+
+    form>div>div>button {
+        font-size: 28px;
+    }
+
+    .send:hover {
+        transition: all 200ms ease-in;
+        transform: scale(1.2);
+    }
+
+    footer {
+        margin: 0px auto auto auto;
     }
 }
