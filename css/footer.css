@@ -12,16 +12,16 @@
     --font-family-footer: 'Quicksand', sans-serif;
 }
 
+
 footer {
+    height: 300px;
     display: flex;
     background-color: var(--secondary-color);
     width: 100%;
     position: relative;
     z-index: 1;
-    margin-top: 30%;
     color: #333;
 }
-
 
 footer h3 {
     text-align: center;
@@ -29,6 +29,7 @@ footer h3 {
 }
 
 .footer-content {
+    height: 700px;
     margin: 0 0;
     font-family: 'Rajdhani', sans-serif;
     color: var(--light);
@@ -45,10 +46,8 @@ footer h3 {
     flex-direction: column;
     justify-content: center;
     padding: 50px 0 80px;
-    margin: 0 30px;
-    margin-bottom: 0px;
+    margin: 0% 0% -15% 0%;
     padding-bottom: 0;
-    margin-right: 75px;
 }
 
 .footer-contact p {
@@ -62,6 +61,10 @@ footer h3 {
     font-size: 120%;
 }
 
+.footer-schedules li span {
+    font-family: 'Rajdhani', sans-serif;
+}
+
 .footer-icons li {
     display: flex;
     flex-direction: row;
@@ -73,6 +76,7 @@ footer h3 {
     color: antiquewhite;
     text-decoration: none;
     margin-block: 1%;
+    margin-bottom: 5%;
     cursor: pointer;
     transition: 0.8s;
     position: relative;
@@ -100,15 +104,22 @@ footer h3 {
 .footer-contact,
 .footer-schedules,
 .footer-icons {
+    color: #F7FFF7;
+    font-weight: bold;
     list-style: none;
 }
 
+.footer-schedules li span,
+.footer-contact p {
+    text-shadow: 0px 4px 20px rgb(0, 0, 0);
+}
+
 .footer-contact h3,
-.footer-partners h3,
 .footer-schedules h3,
 .footer-icons h3 {
-    font-size: 25px;
+    font-size: 200%;
     padding-bottom: 20px;
+    text-shadow: 0px 7px 20px rgb(0, 0, 0);
 }
 
 .footer-icons {
@@ -119,10 +130,10 @@ footer h3 {
     padding: 5px 0;
 }
 
-@media screen and (max-width: 720px) {
 
+@media screen and (max-width: 720px) {
     footer {
-        height: 100%;
+        height: 500px;
     }
 
     .footer-bloc {
@@ -136,6 +147,7 @@ footer h3 {
         justify-content: center;
         width: 100%;
         gap: 5%;
+        margin-bottom: 5%;
     }
 
     .footer-icons h3 {
@@ -143,9 +155,30 @@ footer h3 {
     }
 }
 
-@media screen and (max-width:767px) {
 
-    footer {
-        margin-top: 60%;
+@media screen and (min-width: 840px) {
+
+    .footer-contact,
+    .footer-schedules,
+    .footer-icons {
+        font-size: 100%;
+    }
+
+    .footer-content {
+        height: 500px;
+    }
+}
+
+
+@media screen and (min-width: 1156px) {
+
+    .footer-contact,
+    .footer-schedules,
+    .footer-icons {
+        font-size: 130%;
+    }
+
+    .footer-content {
+        height: 500px;
     }
 }
