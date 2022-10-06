@@ -10,6 +10,7 @@
     --font-family: roboto;
 }
 
+
 body {
     display: flex;
     flex-direction: column;
@@ -91,6 +92,7 @@ span {
 .endbox {
     margin-bottom: 230px;
     width: 100%;
+
 }
 
 @media screen and (min-width:300px) and (max-width:450px) {
