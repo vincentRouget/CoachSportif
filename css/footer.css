@@ -14,7 +14,6 @@
 
 
 footer {
-    height: 300px;
     display: flex;
     background-color: var(--secondary-color);
     width: 100%;
@@ -29,7 +28,7 @@ footer h3 {
 }
 
 .footer-content {
-    height: 700px;
+    height: 500px;
     margin: 0 0;
     font-family: 'Rajdhani', sans-serif;
     color: var(--light);
@@ -45,7 +44,6 @@ footer h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 50px 0 80px;
     margin: 0% 0% -15% 0%;
     padding-bottom: 0;
 }
@@ -132,8 +130,8 @@ footer h3 {
 
 
 @media screen and (max-width: 720px) {
-    footer {
-        height: 500px;
+    .footer-content {
+        height: 750px;
     }
 
     .footer-bloc {
@@ -148,6 +146,7 @@ footer h3 {
         width: 100%;
         gap: 5%;
         margin-bottom: 5%;
+        box-sizing: border-box;
     }
 
     .footer-icons h3 {
@@ -163,10 +162,6 @@ footer h3 {
     .footer-icons {
         font-size: 100%;
     }
-
-    .footer-content {
-        height: 500px;
-    }
 }
 
 
@@ -176,9 +171,5 @@ footer h3 {
     .footer-schedules,
     .footer-icons {
         font-size: 130%;
-    }
-
-    .footer-content {
-        height: 500px;
     }
 }
