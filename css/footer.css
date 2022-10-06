@@ -46,6 +46,7 @@ footer h3 {
     justify-content: center;
     margin: 0% 0% -15% 0%;
     padding-bottom: 0;
+    background-color: #4ECDC4;
 }
 
 .footer-contact p {
@@ -79,6 +80,7 @@ footer h3 {
     transition: 0.8s;
     position: relative;
     overflow: hidden;
+
 }
 
 .footer-icons a:hover {
@@ -122,6 +124,7 @@ footer h3 {
 
 .footer-icons {
     text-decoration: none;
+    background-color: #4ECDC4;
 }
 
 .footer-contact p {
