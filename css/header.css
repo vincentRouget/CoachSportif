@@ -100,14 +100,15 @@ header {
     transform: translateX(-50%);
     opacity: 0;
     background-color: rgba(0, 0, 0, 0.50);
-    width: 100%;
     gap: 8px;
+    margin: 0;
     padding-right: 10px;
 }
 
 .affiche {
     transform: translateX(0);
     opacity: 1;
+    margin: 0;
 }
 
 /* NAV - LIST SECTION */
