@@ -10,12 +10,6 @@
     --font-family: roboto;
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
 body {
     display: flex;
     flex-direction: column;
