@@ -20,7 +20,7 @@
 }
 
 body {
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0;
     padding: 0;
 }
@@ -162,7 +162,7 @@ nav ul li {
     gap: 60px;
     display: flex;
     width: 100%;
-    /grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     justify-content: space-between;
     flex-flow: wrap;
