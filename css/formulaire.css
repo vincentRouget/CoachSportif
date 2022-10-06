@@ -214,6 +214,11 @@ form>div>div>button {
     text-align: center;
 }
 
+.endbox {
+    margin-bottom: 500px;
+    width: 100%;
+}
+
 @media screen and (min-width : 768px) {
 
     #forward {
