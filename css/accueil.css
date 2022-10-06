@@ -10,11 +10,6 @@
     --font-family: roboto;
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
 
 body {
     display: flex;
@@ -97,6 +92,7 @@ span {
 .endbox {
     margin-bottom: 230px;
     width: 100%;
+
 }
 
 @media screen and (min-width:300px) and (max-width:450px) {
