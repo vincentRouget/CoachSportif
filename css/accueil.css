@@ -94,11 +94,20 @@ span {
 
 }
 
-@media screen and (max-width:767px) {
+@media screen and (min-width:300px) and (max-width:450px) {
+    #textSalles {
+        position: relative;
+        margin: 3% 5% 0% -23%;
+        font-size: 65%;
+    }
+}
+
+@media screen and (min-width:450px) and (max-width:767px) {
 
     #textSalles {
         position: relative;
         margin: 3% 5% 0% -23%;
+        font-size: 90%;
     }
 }
 
