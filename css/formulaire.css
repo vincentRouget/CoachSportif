@@ -279,7 +279,8 @@ form>div>div>button {
         height: 50px;
         margin: 5px auto 30px auto;
         padding-left: 70px;
-        transition: all 300ms ease-in;
+        transition: all 200ms ease-in;
+        
     }
 
     #name:hover,
@@ -295,15 +296,15 @@ form>div>div>button {
         width: 72%;
         margin-bottom: 60px;
         margin-left: -1px;
-        transition: all 300ms ease-in;
     }
-
+    
     #msg:hover {
         transition: all 300ms ease-in;
         transform: scale(1.1);
     }
-
+    
     form>div>div>button {
+        transition: all 200ms ease-in;
         font-size: 28px;
     }
 
