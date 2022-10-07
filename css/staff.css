@@ -11,13 +11,13 @@
     --font-family: Rajdhani;
 }
 
-::before,
+/* ::before,
 ::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: var(--font-family);
-}
+} */
 
 body {
     /* height: 100vh; */
