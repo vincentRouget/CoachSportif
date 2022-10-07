@@ -12,11 +12,11 @@ body {
     top: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.4;
-    background-image: url('https://cdn.pixabay.com/photo/2016/04/16/19/27/girl-boxer-1333600_1280.jpg');
+    opacity: 0.2;   
+    background-image: url('https://cdn.pixabay.com/photo/2018/03/23/11/57/girl-3253532_1280.jpg');
     background-repeat: no-repeat;
     background-position: 70%;
-    background-size: cover;
+    background-size:cover;
     z-index: -1;
 }
 
@@ -117,5 +117,21 @@ body {
 @media screen and (min-width: 1000px) {
     .down p {
         font-size: 120%;
+    }
+}
+@media screen and (min-width: 1120px) {
+    .down p {
+        font-size: 140%;
+    }
+}
+
+@media screen and (min-width: 1350px) {
+    .sport1 .top h3,
+    .sport2 .top h3 {
+        font-size: 170%;
+
+}
+    .down p {
+        font-size: 170%;
     }
 }
