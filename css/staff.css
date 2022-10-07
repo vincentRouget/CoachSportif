@@ -145,50 +145,18 @@ body {
     gap: 15px;
     padding: 0 15px 0 0;
     font-size: 20px;
-}
-
-.coach1:hover {
     transition: all 400ms ease-in-out;
-    transform: scale(1.05);
 }
 
-.coach2:hover {
-    transition: all 400ms ease-in-out;
-    transform: scale(1.05);
-}
-
-.coach3:hover {
-    transition: all 400ms ease-in-out;
-    transform: scale(1.05);
-}
-
-.coach4:hover {
-    transition: all 400ms ease-in-out;
-    transform: scale(1.05);
-}
-
-.coach5:hover {
-    transition: all 400ms ease-in-out;
-    transform: scale(1.05);
-}
-
-.coach6:hover {
-    transition: all 400ms ease-in-out;
-    transform: scale(1.05);
-}
-
-.coach7:hover {
-    transition: all 400ms ease-in-out;
-    transform: scale(1.05);
-}
-
-.coach8:hover {
-    transition: all 400ms ease-in-out;
-    transform: scale(1.05);
-}
-
+.coach1:hover,
+.coach2:hover,
+.coach3:hover,
+.coach4:hover,
+.coach5:hover,
+.coach6:hover,
+.coach7:hover,
+.coach8:hover,
 .coach9:hover {
-    transition: all 400ms ease-in-out;
     transform: scale(1.05);
 }
 
