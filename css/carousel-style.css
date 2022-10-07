@@ -13,7 +13,7 @@ section {
     width: 100%;
     height: 100%;
     position: relative;
-    
+
 }
 
 .carousel>ul {
@@ -91,7 +91,7 @@ h2 {
 
 
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
     .desktop {
         display: none;
         position: absolute;
